@@ -1,0 +1,74 @@
+h1{
+     color: black;
+}
+body {
+    background-image:url("/storage/emulated/0/Pictures/Screenshot/Screenshot_20230518-115522~2.png");
+    background-size:140% ;
+    background-repeat: none ;
+}
+input {
+border:1px solid green;
+     padding: 11px;
+     width: 80%;
+     color: black;
+     background: white;
+     margin:15px;
+}
+button {
+    background: white;
+    padding :9px;
+    width: 80%;
+    border :2px solid green ;
+    border-radius: 2px;
+  animation: zooming 4s linear infinite;
+}
+  @keyframes zooming{
+  0%{
+    transform: scale(1.2);
+  }
+  50%{
+    transform: scale(1.0);
+    }
+  100%{
+    transform: scale(1.2);
+  }
+}
+
+}
+p{
+     color: black;
+     font-size:15px;
+}
+#div{
+  border: 1px solid black;
+text-align: center ;
+     background: white;
+     color: white;
+     margin: 7px;
+     padding: 5px;
+     width: 60%;
+     border-radius:2px;
+}
+a{
+     color: white;
+     text-decoration:none;
+}
+input:hover{
+     background:pink;
+     border:2px solid black ;
+}
+.big{
+outline :2px solid black ;
+align-content: center;
+align-items: center;
+text-align: center;
+padding: 5px;
+     width:90%;
+     margin: 0 auto;
+     background: fff;
+     box-shadow:10px 16px 31px 3px rgba(0,0,0,0.7);
+}
+#div a{
+  
+  color:black;
+}
