@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/2b83026e2c.js" crossorigin="anonymous"></script>
+  
+  <meta name="viewport" content="width=devive-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/regions.css">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>regions</title>
+</head>
+<body bgcolor="lightblue">
+  
+     <!--Nav bar -->
+  <center>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="ministry.html">Ministry</a>
+      <a href="sign in.html">Login</a>
+      <!-- menu bar-->
+      <div onclick="show()"id="bar">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        </div>
+      </nav>
+    
+    <!--menu list-->
+    <div id="menu">
+      <button id="button" onclick="hide()">Close</button>
+      <a href="weapons.html">  <i class="fa-solid fa-jet-fighter"></i>&nbsp;&nbsp;
+       Weapons</a> 
+      <a href="sign in.html"> <i class="fa-solid fa-right-to-bracket"></i>&nbsp;&nbsp;
+Join Us</a>
+      <a href="gallary.html"> <i class="fa-regular fa-images"></i>&nbsp;&nbsp;
+Gallary</a>
+      <button onclick="ff()"> 
+      <i class="fa-solid fa-music"></i>&nbsp;&nbsp;
+     Nation Anthem</button>
+      <a href="officials.html"><i class="fa-solid fa-person-military-rifle"></i>&nbsp;&nbsp;
+ Officials</a>
+      <a class="active"href=""> 
+  <i class="fa-solid fa-house-laptop"></i>&nbsp;&nbsp;
+  Branches</a>
+    </div>
+    
+    <br><br><br>
+    <video autoplay loop plays-inline muted id="video">
+    <source src="/storage/emulated/0/DCIM/Camera/48f1031b43e706a60de66037bcea1e73.mp4">
+  </video>
+    <video style="width:100%;" controls loop src="/storage/emulated/0/DCIM/Camera/48f1031b43e706a60de66037bcea1e73.mp4"></video>
+    <br>
+ 
+    <h2>Uganda</h2> 
+    
+    
+    
+    
+    <!--anthem-->
+    <audio id="song">
+      <source src="/storage/emulated/0/Download/Uganda National Anthem - DJ Erycom (erycom)_1529350245.mp3">
+    </audio>  
+    <div id="div1">
+      
+      <button style="float:right;background:red;color:white;border-radius:23px;"onclick="ex()">Exit</button><br><br>
+      
+      
+      <br>
+      <div id="me"></div>
+      <div id="just"></div><br>
+      <h3><b style="font-size:30px;color:red;">Uganda</b> National Anthem</h3>
+      
+      <div class="div">
+      <input value="0"type="range" id="prog"><br>
+      <br>
+        <button onclick="fun()">Play Song</button>
+      <button onclick="fu()">Pause song</button>
+      </div>
+    </div>
+    <script src="scripts/join us .js">
+    <script>
+    var song = document.getElementById("song");
+    var pro = document.getElementById("prog");
+    var sp = document.getElementById("me");
+      
+   song.onloadedmetadata = function(){
+     pro.value = song.currentTime;
+    pro.max = song.duration;
+   }
+    if(song.play){
+      setInterval(()=>{
+        pro.value = song.currentTime;
+      },10);
+    }
+    function fun(){
+      song.play();
+      document.getElementById("me").style.display = "block";
+      document.getElementById("just").style.display = "none";
+    }
+    function fu(){
+      song.pause()
+      document.getElementById("me").style.display = "none";
+      document.getElementById("just").style.display = "block";
+      
+    }
+    function ex(){
+      document.getElementById("nav").style.display = "block";
+      song.pause();
+      pro.value = 0;
+      song.currentTime = 0;
+      document.getElementById("div1").style.display = "none";
+      document.getElementById("sec").style.display = "block";
+    }
+    pro.onchange = function(){
+      song.play();
+      song.currentTime = pro.value;
+      document.getElementById("me").style.display ="block";
+      document.getElementById("just").style.display ="none";
+    
+    }
+    {
+      document.getElementById("me").style.display ="none";
+    }
+    var menu = document.getElementById("menu");
+    function show(){
+      menu.style.display = "block";
+      document.getElementById("sec").style.display = "none";
+    }
+    function hide(){
+      document.getElementById("sec").style.display = "block";
+      menu.style.display = "none";
+      document.getElementById("div1").style.disply = "none";
+    }
+    function ff(){
+      document.getElementById("div1").style.display = "block";
+      menu.style.display = "none";
+      document.getElementById("nav").style.display = "none";
+      document.getElementById("me").style.display ="none";
+      document.getElementById("just").style.display ="block";
+      
+    }
+    
+    </script>
+  <!--header-->
+  
+  <section id="sec">
+    <h2>Ugandan Army Regions</h2>
+    <table><!-- style="background:red;width:90%;border:2px solid blue;color:white;">
+      
+      <colgroup style="background:pink;"></colgroup>
+      <colgroup style="background:orange;"></colgroup>
+      <colgroup style="background:grey;"></colgroup>
+      <colgroup style="background:black;"></colgroup>
+      -->
+      <thead>
+        <tr>
+          <th>Region</th>
+          <th>Number of Barracks</th>
+          <th>Commander</th>
+          <th>Since</th>
+        </tr>
+        
+      </thead> 
+      
+      <tbody>
+        
+        <tr>
+          
+          <td>Kabarole</td>
+          <td>25</td>
+          <td>Gen.Muhoozi</td>
+          <td>1987</td>
+        </tr>
+        <tr>
+          
+          <td>Kabaale</td>
+          <td>2</td>
+          <td>Gen.Katumba</td>
+          <td>1999</td>
+        </tr>
+        <tr>
+          
+          <td>Kampala</td>
+          <td>15</td>
+          <td>Gen.Katumba</td>
+          <td>1977</td>
+        </tr>
+        <tr>
+          
+          <td>Wakiso</td>
+          <td>15</td>
+          <td>Gen.Rukidi</td>
+          <td>1977</td>
+        </tr>
+        <tr>
+          
+          <td>Kuenjojo</td>
+          <td>12</td>
+          <td>Gen.Mukasa</td>
+          <td>1967</td>
+        </tr>
+        <tr>
+          
+          <td>Kitugumu</td>
+          <td>6</td>
+          <td>Gen.Kyaligaba</td>
+          <td>1997</td>
+        </tr>
+        <tr>
+          
+          <td>Arua</td>
+          <td>5</td>
+          <td>Gen.Kisaachi</td>
+          <td>1997</td>
+        </tr>
+        <tr>
+          
+          <td>Bunyangabi</td>
+          <td>8</td>
+          <td>Gen.Mwesige</td>
+          <td>1987</td>
+        </tr>
+         <tr>
+          
+          <td>Kasese</td>
+          <td>25</td>
+          <td>Gen.Mumbere</td>
+          <td>1981</td>
+        </tr>
+        <tr>
+          
+          <td>Kagadi</td>
+          <td>25</td>
+          <td>Gen.Mwihwa</td>
+          <td>1987</td>
+        </tr>
+        <tr>
+          
+          <td>Western</td>
+          <td>25</td>
+          <td>Gen.Muhoozi</td>
+          <td>1987</td>
+        </tr>
+        <tr>
+          
+          <td>Western</td>
+          <td>25</td>
+          <td>Gen.Muhoozi</td>
+          <td>1987</td>
+        </tr>
+        <tr>
+          
+          <td>Western</td>
+          <td>25</td>
+          <td>Gen.Muhoozi</td>
+          <td>1987</td>
+        </tr>
+        <tr>
+          
+          <td>Western</td>
+          <td>25</td>
+          <td>Gen.Muhoozi</td>
+          <td>1987</td>
+        </tr>
+        <tr>
+          
+          <td>Western</td>
+          <td>25</td>
+          <td>Gen.Muhoozi</td>
+          <td>1987</td>
+        </tr>
+        <tr>
+          
+          <td>Western</td>
+          <td>25</td>
+          <td>Gen.Muhoozi</td>
+          <td>1987</td>
+        </tr>
+        
+        
+         <tr>
+          
+          <td>Western</td>
+          <td>25</td>
+          <td>Gen.Muhoozi</td>
+          <td>1987</td>
+        </tr>
+        <tr>
+          
+          <td>Western</td>
+          <td>25</td>
+          <td>Gen.Muhoozi</td>
+          <td>1987</td>
+        </tr>
+        <tr>
+          
+          <td>Western</td>
+          <td>25</td>
+          <td>Gen.Muhoozi</td>
+          <td>1987</td>
+        </tr>
+        <tr>
+          
+          <td>Western</td>
+          <td>25</td>
+          <td>Gen.Muhoozi</td>
+          <td>1987</td>
+        </tr>
+        <tr>
+          
+          <td>Western</td>
+          <td>25</td>
+          <td>Gen.Muhoozi</td>
+          <td>1987</td>
+        </tr>
+        <tr>
+          
+          <td>Western</td>
+          <td>25</td>
+          <td>Gen.Muhoozi</td>
+          <td>1987</td>
+        </tr>
+        <tr>
+          
+          <td>Western</td>
+          <td>25</td>
+          <td>Gen.Muhoozi</td>
+          <td>1987</td>
+        </tr>
+        <tr>
+          
+          <td>Western</td>
+          <td>25</td>
+          <td>Gen.Muhoozi</td>
+          <td>1987</td>
+        </tr>
+        
+      </tbody>
+     
+    </table>
+    <br><hr><br>
+    <footer>
+      <br>
+      <a href="">About Us</a>
+      <a href="">Contacts</a>
+      <a href="">Emergence</a>
+      <br><hr>
+      <div id="div7">
+        Bundle Usage: You have used  of your daily bundle. Dial  to buy another Bundle Usage: You have used 
+         of your daily bundle. Dial 
+        to buy another Bundle Usage: You have used 
+        of your daily bundle. Dial  to buy another bundle.
+        Bundle Usage:
+      </div>
+      <a class="rr" href="">Terms and conditions</a>
+      <br><br><br>
+      <p>This website was designed by Proffesor.Ahumuza Ronney</p>
+      
+      <div id="copy">©Copyright 2023 All rights reserved</div>
+    </section>
+  </footer>

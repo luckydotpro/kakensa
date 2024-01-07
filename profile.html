@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="styles/style.css">
+     <meta name ="viewport"content ="width=device-width, initial scale ="1">
+     <link rel="stylesheet" href="styles/profile.css">
+     <meta charset="UTF-8>
+     <title>
+       Profile
+       </title>
+  <body>
+  <p style="margin:0;"id="p"></p>
+  
+  <!--Nav bar -->
+  <center>
+    <nav id="nav">
+      <a href="index.html"> 
+  
+  Home</a>
+      <a href="ministry.html">  
+Contact us</a>
+      <a class='active' href="sign in.html"> 
+        
+
+        Back</a></div></nav>
+  
+  
+      <div id="account" style="height:130vh;">
+        <section id="rest">
+        <div class="img" >
+        <img id="pro"src="image/pic1.jpg">
+          
+        </div>
+        <h2 style="margin:0;color:green;">WELCOME!</h2>
+        <h3 style="margin:0;"><span id="firstnameplace">FirstName </span>&nbsp;&nbsp;<span id="lastnameplace">LastName</span></h3>
+        <span id="emailplace">luckydotgmail.com</span>
+        <br><hr>
+        <section id="rest">
+        <p>The phone number is:<span style="color:blue;margin-left:3px;"id="phoneplace">+25678965454</span>
+        </p>
+      </section>
+          
+          
+          
+  <h2>Create Post</h2>
+          <input type="file" accept="image/jpg,image/png,image/jpeg" id="input-file2">
+          
+          <label for="input-file2" id="box">
+          +
+        </label><br>
+  <textarea id="text"rows="5" cols="32"></textarea>
+<p onclick='showpost()' id="post">POST</p> 
+           
+</section>
+        
+        
+        
+        <section id="keep">
+     
+          <div style="float:left;"id="img2" >
+            <div class="on"></div>
+        <img id="prof" src="image/pic1.jpg">
+  </div> 
+               <h4><span id="poster">FirstName LastName</span><span style="margin-left:12px;color:grey;">Just now</span></h4>
+                
+  
+<div id="posted">
+  <img src="image/pic2.png" id="profile-pic2">
+</div>
+          <p id="words">
+           This my first post this the descriptiob part
+             This is my first post this the descriptiob part
+            this 
+            
+            <span style="margin-top:0;" id="keep-more">
+              
+                
+           This is my first post this the descriptiob part
+            this  this is my first post this the descriptiob part
+            </span>
+          </p>
+          <b onclick="keepmore()" id="keep-more-show" style="margin:0;text-align:center;
+              margin-right:8px;float:right;width:90px;background:white;border:1px solid black;padding:2px;">More....</b>
+            
+        </section>
+</div>
+  
+  
+  
+      <!-- menu bar-->
+      <div style='display:none;' onclick="show()"id="bar">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        </div></div>
+      </nav>
+    
+    <!--menu list-->
+    <div id="menu">
+      <button id="button" onclick="hide()">Close</button>
+      <a href="weapons.html">  <i class="fa-solid fa-jet-fighter"></i>&nbsp;&nbsp;
+       Weapons</a> 
+      <a href="sign in.html"> <i class="fa-solid fa-right-to-bracket"></i>&nbsp;&nbsp;
+Join Us</a>
+      <a href="gallary.html"> <i class="fa-regular fa-images"></i>&nbsp;&nbsp;
+Gallary</a>
+      <!--button onclick="ff()"> 
+      <i class="fa-solid fa-music"></i>&nbsp;&nbsp;
+     Nation Anthem</button-->
+      <a href="officials.html"><i class="fa-solid fa-person-military-rifle"></i>&nbsp;&nbsp;
+ Officials</a>
+      <a href="regions.html"> 
+  <i class="fa-solid fa-house-laptop"></i>&nbsp;&nbsp;
+  Branches</a>
+    </div>
+    <br><br><br>
+    
+    <!--anthem-->
+    <audio loop id="song">
+      <source src="/storage/emulated/0/Updf/Image/anthem.mp3">
+    </audio>  
+    <div id="div1">
+      
+      <button style="float:right;background:green;color:white;border-radius:23px;"onclick="ex()">Exit</button><br><br>
+      
+      
+      <br>
+      <div id="me"></div>
+      <div id="just"></div><br>
+      <h3><b style="font-size:30px;color:green;">Uganda</b> National Anthem</h3>
+      
+      <div class="div">
+      <input value="0"type="range" id="prog"><br>
+      <br>
+        <button onclick="fun()">Play Song</button>
+      <button onclick="fu()">Pause song</button>
+      </div>
+    </div>
+  <h2 style="color:red;text-align:;">Create account</h2>
+  
+     <div class="divorce">
+       <br><br>
+     <img src="image/pic1.jpg" id="profile-pic" ></div><br<br><br>
+       
+     <center >
+     <label id="label" for ="input-file">Upload Picture</label>
+     <input type ="file" accept ="image/jpg, image/jpeg, image/png" id="input-file">
+     
+       
+       <br><br>
+      
+<hr>
+Fill the Form Below To Join Our Database
+<br>
+ 
+ 
+<section id="one">
+ 
+
+     <label>First Name:</label>
+<input id="input1"type="text" placeholder ="Firstname.. " style=";" class="puts"><br><label >Last Name:</label>
+<input id="input2" type="text" placeholder ="Last name .."><br><label>Country code:</label>
+<select id="input5">
+     <option value ="+256">+256</option>
+     <option value ="+206">+256</option>
+     <option value ="+996">+256</option>
+     <option value ="+765">+256</option>
+     <option value ="+156">+432</option>
+     <option value ="+456">+456</option>
+</select><br>
+  <label>Phone no</label><input type="number"min="9"max="9" placeholder="789396484" id="input4"><br>
+<label>Email:</label>
+<input  id="input3" type="text" placeholder=" email" class="p" >  <br><label >Password:</label>
+   <input id="password" type="text" placeholder="Password....." class="p">
+  <br><hr>
+   <button onclick="finish()">Finish</button>
+  <br><br><br>
+  <br><br><br><br><br>
+   </section>
+   </div></center>
+   
+       
+       
+       
+  
+<script>
+var bottom = document.getElementById("one");
+  
+window.localstorage;
+          let profilepic = document.getElementById("profile-pic");
+var pro = document.getElementById('pro');
+          let inputFile = document.getElementById("input-file");
+          inputFile.onchange = function(){
+            
+               profilepic.src = URL.createObjectURL(inputFile.files[0]);
+            prof.src = URL.createObjectURL(inputFile.files[0]);
+           
+             pro.src = URL.createObjectURL(inputFile.files[0]);
+             }
+
+ /* var Fname = document.getElementById('Fn').value;
+  var Lname = document.getElementById('Ln');
+  var Firstname = document.getElementById('Fn');
+ */ var password = document.getElementById('password');
+
+function finish(){
+   
+  document.getElementById("account").style.display = "block";
+  
+  bottom.style.display = "none";
+  document.getElementById("firstnameplace").innerHTML = document.getElementById("input1").value;
+  document.getElementById("lastnameplace").innerHTML = document.getElementById("input2").value;
+  document.getElementById("emailplace").innerHTML = document.getElementById("input3").value;
+  document.getElementById("phoneplace").innerHTML = document.getElementById("input5").value + document.getElementById("input4").value;
+  
+};
+function keepmore(){
+  document.getElementById('words').style.overflow = 'visible';;
+  document.getElementById('keep-more-show').style.display = 'none';
+  
+}
+//post input
+function showpost(){
+  document.getElementById('rest').style.display = 'none';
+  document.getElementById('keep').style.display = 'block';
+  
+}
+
+let profilepic2 = document.getElementById("profile-pic2");
+          let inputFile2 = document.getElementById("input-file2");
+          inputFile2.onchange = function(){
+            
+               profilepic2.src = URL.createObjectURL(inputFile2.files[0]);
+             }
+
+function showpost(){
+  document.getElementById('keep').style.display = 'block';
+  document.getElementById('rest').style.display = 'none';
+  document.getElementById('words').innerHTML = document.getElementById('text').value;
+  var nam = document.getElementById("input1").value;
+ var name = document.getElementById("input2").value;
+  
+  
+  bottom.style.display = "none";
+  document.getElementById("poster").innerHTML = nam +" " + name;
+    
+    
+    
+    
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+#img1 img{
+  animation: zoom 3s linear infinite;
+}
+@keyframes zoom{
+  0%{
+    transform: scale(1.1);
+  }
+  50%{
+    transform: scale(1.0);
+    }
+  100%{
+    transform: scale(1.1);
+  }
+}
+h1{
+color:red;
+}
+#btn{
+  background: red;
+  color:white;
+  width:70%;
+  padding: 20px;
+  margin: 20px;
+  /*animation: zoom 3s linear infinite;
+*/}
+#login{
+  background: white;
+  width:98%;
+  height: 190vh;
+ position:absolute;
+  top:0%;
+  left:1%;
+  animation-name: height;
+  animation-duration: 6s;
+  display: none;
+}
+#login .pic{
+  width:50%;
+  height: 140px;
+  background: white;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid black;
+  box-shadow: 0 0 14px 14px rgba(0,0,0,0.1);
+}
+.head{
+  background: gainsboro;
+  width:30%;
+  height: 11vh;
+  border-radius: 50%;
+}
+.chest{
+  border-radius: 50%;
+  width:0;
+  height: 0;
+  border-top: 100px solid grey;
+  border-left: 100px solid grey;
+}
+#login input{
+  width:80%;
+  margin: 5px;
+  padding: 8px;
+ border: 2px solid black; 
+}
+#login button{
+  width:120px;
+  padding: 4px;
+  color:white;
+  background: black;
+  margin: 4px;
+}
+#ca{
+  color:white;
+  background: whitesmoke;
+  width:98%;
+  height: 140vh;
+ position:absolute;
+  top:0%;
+  left:1%;
+  animation-name: height;
+  animation-duration: 2s;
+  display: none;
+  
+}
+form{
+  text-align: left;
+  color:black;
+  background: white;
+}
+#ca span, span input{
+  width:50px;
+}
+#ca input{
+  padding: 8px;
+  margin: 6px;
+  margin-top: 16px;
+}
+h4{
+  margin: 3px;
+}
+label{
+  font-weight: bold;
+  fony-size:30px;
+}
+form button{
+  width:30%;
+  color:white;
+  padding: 5px;
+  margin: 15px;
+  background: grey;
+}

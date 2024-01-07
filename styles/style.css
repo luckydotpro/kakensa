@@ -1,0 +1,402 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  padding: 0;
+  margin: 0;
+  background: white;
+}
+#news img{
+  width: 18%;
+  float :left;
+}
+#news{
+padding: 5px;
+     width :98%;
+     overflow : hidden ;
+     height :60px;
+     background :grey;
+}
+#words{
+     margin-left:20%;
+}
+.box{margin: ;
+  border-radius: 30px;
+  background: red;
+  width:90%;
+  box-shadow: 12px 12px 19px black;
+  color:white;
+  display: none;
+}
+.icons{
+  background: rgba(0,0,0,0.8);
+  padding: 23px;
+  box-shadow: 0 0 23px 23px white;
+ margin-bottom: 46px; 
+}
+.weapon i{
+  margin-left:17px;
+  font-size: 40px;
+  color:white;
+}
+#more{
+  display: none;
+}
+.weapon p{
+  color:white;
+  background: black;
+  margin-bottom: 0;
+  box-shadow: 0 0 23px 23px white;
+  
+  padding: 19px;
+}
+.weapon button{
+  color:white;
+  margin: 12px;
+  background: tomato;
+  padding: 12px;
+  width:70%;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+  border-bottom: 100px solid transparent;
+  border-left: 100px solid black;
+  border-right: 100px solid yellow;
+  border-top: 100px solid red;
+}
+.back{
+  width:100%;
+  position:absolute;
+  left: 0;
+  z-index: -1;
+}
+.bar{
+  width:45px;
+  height: 9px;
+  background: red;
+  margin: 3px;
+}
+#bar{
+  
+  position:absolute;
+  top:6px;
+  right:3px;
+ 
+  background: white;
+  padding: 4px;
+}
+#bar:hover,
+#menu a:hover,#menu button:hover{
+  background: hotpink;
+}
+h1{
+  color:red;
+  background: green;
+  width:100%;
+  padding: 0px;
+  margin-bottom: 0;
+}
+h1.sticky{
+  position:sticky;
+  top:0;
+}
+img{
+  width:100%;
+  margin-top: 0;
+}
+.span{
+  padding: 30px;
+  border-radius: 10px;
+  position:absolute;
+  top:120px;
+  color:white;
+  background: linear-gradient(to right,rgba(0,0,0,0.3),rgba(200,250,0,0.3),rgba(255,0,0,0.3));
+  width:70%;
+  opacity: ;
+  font-size: 50px;
+  left:10%;
+  border: 5px solid white;
+}
+#prog{
+  -webkit-appearance:none;
+  background: white;
+  width:90%;
+  
+  height: 4px;
+}
+#prog::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  background: magenta;
+  height: 14px;
+  border-radius: 50%;
+  width:9px;
+  border: 2px solid white;
+}
+@keyframes height{
+  from{
+    opacity: 0.3;
+  }
+  to{
+    opacity: 1.0;
+    
+  }
+}
+#me{
+  animation-name: height;
+  animation-duration: 5s;
+  animation: spin 5s linear infinite;
+  -webkit-animation: spin 5s linear infinite;
+  
+  border-left: 10px solid black;
+  border-right: 8px solid white;
+  border-bottom: 10px solid black;
+  border-top: 8px solid white;
+  border-radius: 50%;
+  width:61%;
+  height: 200px;
+  display: none;
+  box-shadow: 0 0 40px 40px rgba(0,0,0,0.6);
+  background-size:300px;
+  overflow: hidden;
+  background-repeat: none;
+  background-image: url("/Image/49.jpg");
+}
+@-webkit-keyframes spin{
+  0%{
+   -webkit-transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+#div1{
+  overflow: auto;
+  height: 100vh;
+  background: grey;/* url("/storage/emulated/0/Download/a-picture-taken-on-january-26-2010-shows-ugandas-people-defence-forces-updf-during-a-ceremony.jpg");
+  */background-size: 100%;
+  display: none;
+  width:100%;
+  outline: 2px solid green;
+  color:blue;
+  position:fixed;
+  top:0px;
+  left:0;
+  animation-name: height;
+  animation-duration: 9s;
+}
+#div1 button{
+  background: rgba(122,1,0,0.9);
+  color:white;
+  margin: 6px;
+  padding: 5px;
+  min-width: 130px;
+  box-shadow: 0 0 4px 4px black;
+}
+h3{
+  background: white;
+  padding: 6px;
+  width:100%;
+  color:Blue;
+  margin-bottom: 0;
+  padding-top: 20px;
+  letter-transform: uppercase;
+}
+#just{
+  border-left: 10px solid black;
+  border-right: 8px solid white;
+  border-bottom: 10px solid black;
+  border-top: 8px solid white;
+  border-radius: 50%;
+  width:61%;
+  height: 200px;
+  box-shadow: 0 0 7px 7px black;
+  background-size:300px;
+  background-image: url("Image/49.jpg");
+}
+nav{
+  position:absolute;
+  position:fixed;
+  z-index: 1;
+  margin-top: 0;
+  background: rgba(0,0,0,0.9);
+  width:100%;
+  padding: 19px;
+}
+nav a{
+  text-decoration: none;
+  color:white;
+  float: left;
+  margin-left: 22px;
+}
+nav button{
+  background: inherit;
+  color:white;
+}
+#menu{
+  display: none;
+  height: 290px;
+  width:70%;
+  background: gainsboro;
+  position:fixed;
+  top:20px;
+  z-index: 2;
+  right:0;
+  animation-name:height ;
+  animation-duration: 5s;
+  overflow: hidden;
+}
+#menu a,#menu button{
+  outline: none;
+  display: flex;
+  color:white;
+  background: rgba(0,0,0,0.2);
+  width:100%;
+  text-decoration: none;
+  margin: 1px;
+  padding: 12px;
+  box-shadow: 0 0 40px 23px rgba(0,0,0,0.4);
+}
+ #menu #button{
+  float: right;
+  width:100px;
+   border: none;
+  margin-left: 0px;
+  padding: 4px;
+  background: green;
+   
+}
+#div1 button:first-child{
+  background: green;
+}
+#menu button{
+  border: 0;
+}
+#img1{
+  width:100%;
+  background: rgba(200,233,0,0.4);
+  height: 100vh;
+ /* border-bottom-right-radius: 100px;
+  */border-bottom-left-radius: 10px;
+  
+}
+#img2{
+  width:100%;
+  background: rgba(210,240,140,0.4);
+  height: 190vh;
+}
+h1{
+  outline: 2px solid red;
+}
+footer{
+  color:white;
+  min-height: 70vh;
+  width:100%;
+  background: rgba(0,0,0,0.7);
+}
+footer a{
+  color:white;
+  padding: 10px;
+}
+#div7{
+  text-align:left;
+}
+.rr{
+  float: left;
+  color:red;
+}
+#copy{
+  color:blue;
+  position:relative;
+  width:100%;
+  padding: 11px;
+  border-bottom: 0px;
+  left:0;
+  text-decoration: none ;
+  background: black;
+}
+#sec{
+  display:;
+}
+#div1 .div{
+  height: 200px;
+  background: rgba(0,0,0,0.9);
+  width:100%;
+}
+#nav a:hover{
+  background: red;
+  padding: 5px;
+}
+.div button:hover{
+  background: orange;
+}
+.divi img{
+  border-radius: 50%;
+  animation: zoom 9s linear infinite;
+  	width:90px;
+  transform: scale(0.3);
+  height: 120px;
+  transform: scale(1.4);
+}
+#img1 .divi{
+  border-radius: 50%;
+  width:35%;
+  height: 100px;
+  overflow: hidden;
+  float: left;
+  box-shadow: 0 0 23px 12px;
+  
+}
+@keyframes zoom{
+  0%{
+    transform: scale(2.8);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(2.8);
+  }
+}
+
+.back{
+  position:absolute;
+  z-index: -1;
+}
+.active, #menu .active, .pag .active{
+  color:red;
+  text-decoration: underline;
+  font-weight: bold;
+}
+#time{
+  background: black;
+}
+#p{
+     position: absolute ;
+     background :black ;
+     color :white;
+     top:50px;
+     left :60%;
+  z-index: 1;
+     padding :8px;
+     position : fixed ;
+}
+#footernav i{
+   font-size:20px ;  
+   margin-left:25px;
+}}
+#footernav{
+     justfy-content: space-between;
+}

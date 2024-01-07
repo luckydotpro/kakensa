@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="scripts/sign.css">
+     <meta name="viewport"content="width=device-width, initial-scale=1">
+     <title>Sign in</title>
+</head>
+<body>
+     <br><br>
+    <div class="big">
+     <h1> Sign in</h1>
+     <center>
+   <input type="text" placeholder="Phone number or email">  
+   <input id="input"type="text" placeholder="Password.....">
+   <button onclick="ff()" >Log in</button>
+   </center>
+   <p><a href="">Forgot password</a></p>
+  <!--   <input style="float:left;" type="checkbox"><b style="float: right;">Remember me.</b>
+    --><br>
+   <div id="div"><a href="profile.html">New account</a></div><br><br<br>
+   <p id="p">fdf</p>
+   
+<script >
+           been();
+        function been(){
+             
+        
+        var date = new Date();
+        let hour = date.getHours();
+        var minutes = date.getMinutes();
+        var second = date.getSeconds();
+        var x = "AM";
+        document.getElementById("p"). innerHTML = hour +":"+ minutes + ":" + second + " "+ x;
+  setTimeout(been, 1000);
+  
+  if(hour == 0){
+       hour = 12;
+       }
+       if(hour > 11){
+           hour = hour - 12; 
+           x = "PM";
+       };
+       if(hour < 10){
+            hour = "0" + hour
+            
+       };
+       if(minutes < 10){
+            minutes = "0" + minutes;
+       };
+       if(second < 10){
+            second = "0" + second;
+       };
+  };
+   </script>
+</body>
+</html>
+
+               

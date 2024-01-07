@@ -1,0 +1,112 @@
+.start img{
+  width:100%;
+  border: 2px solid black;
+  animation: zoom 5s linear infinite;
+}
+
+@keyframes zoom{
+  0%{
+    transform: scale(1.9);
+  }
+  50%{
+    transform: scale(1.0);
+    }
+  100%{
+    transform: scale(1.9);
+  }
+}
+.start{
+  border: 2px solid black;
+  height: 200px;
+  width:200px;
+  border-radius: 50px;
+  overflow: hidden;
+  float: left;
+}
+p{
+  padding: 12px;
+  text-align: left;
+}
+.hr1{
+  height: 20px;
+  background: red;
+}
+.prof img{
+  width:100%;
+  
+}
+.prof b{
+  margin: 12px;
+  padding: 26px;
+}
+.prof{
+  text-align: center;
+  margin-bottom: 23px;  
+  background: white;
+  margin-left: 4px;
+  text-align: center;
+  box-shadow: 0 0 9px 3px;
+  width:80%;
+ /* max-height:200px;*/
+  min-height: 150px;
+  border: 0px solid black;
+  float: ;
+  overflow: ;
+ /* border-bottomright-radius: 30px;
+  border-bottom-left-radius: 30px;*/
+}
+h2{
+  Color:black;
+}
+.prof b{
+  padding-right: 12px;
+}
+#yy{
+  animation: cha 5s linear infinite;
+}
+@keyframes cha{
+  0%{
+    color:red;
+    font-size: 21px;
+    
+  }
+  50%{
+    color:green;
+    font-size: 25px;
+    }
+  100%{
+    color:Hotpink;
+    font-size: 21px;
+  }
+}
+#heading{
+  color: red;
+}
+
+#explains{
+
+
+}
+
+
+
+
+
+
+
+
+#fb{
+  background: lightgreen;
+  color: blue;
+  padding: 20px;
+  font-weight: bold;
+font-size: 40px;
+text-align: center;
+text-decoration: none;
+
+  width: 80%;
+}
+
+#fb a{
+  text-decoration: none;
+}

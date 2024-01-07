@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/2b83026e2c.js" crossorigin="anonymous"></script>
+  
+  <meta name="viewport" content="width=devive-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/join us .css">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>signin</title>
+</head>
+<body>
+  
+     <!--Nav bar -->
+  <center>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="ministry.html">Ministry</a>
+      <a class="active"href="">Login</a>
+      <!-- menu bar-->
+      <div onclick="show()"id="bar">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        </div>
+      </nav>
+    
+    <!--menu list-->
+    <div id="menu">
+      <button id="button" onclick="hide()">Close</button>
+      <a href="weapons.html">  <i class="fa-solid fa-jet-fighter"></i>&nbsp;&nbsp;
+       Weapons</a> 
+      <a class="active"href="join us .html"> <i class="fa-solid fa-right-to-bracket"></i>&nbsp;&nbsp;
+Join Us</a>
+      <a href="gallary.html"> <i class="fa-regular fa-images"></i>&nbsp;&nbsp;
+Gallary</a>
+      <button onclick="ff()"> 
+      <i class="fa-solid fa-music"></i>&nbsp;&nbsp;
+     Nation Anthem</button>
+      <a href="officials.html"><i class="fa-solid fa-person-military-rifle"></i>&nbsp;&nbsp;
+ Officials</a>
+      <a href="regions.html"> 
+  <i class="fa-solid fa-house-laptop"></i>&nbsp;&nbsp;
+  Branches</a>
+    </div>
+    <br><br><br>
+    <!--anthem-->
+    <audio loop id="song">
+      <source src="/storage/emulated/0/Download/Uganda National Anthem - DJ Erycom (erycom)_1529350245.mp3">
+    </audio>  
+    <div id="div1">
+      
+      <button style="font-size:20px;float:right;background:red;color:white;border-radius:23px;"onclick="ex()">Exit</button><br><br>
+      
+      
+      <br>
+      <div id="me"></div>
+      <div id="just"></div><br>
+      <h3><b style="font-size:30px;color:green;">Uganda</b> National Anthem</h3>
+      
+      <div class="div">
+      <input value="0"type="range" id="prog"><br>
+      <br>
+        <button onclick="fun()">Play Song</button>
+      <button onclick="fu()">Pause song</button>
+      </div>
+    </div>
+    <script src="scripts/join us .js">
+    <script>
+    var song = document.getElementById("song");
+    var pro = document.getElementById("prog");
+    var sp = document.getElementById("me");
+      
+   song.onloadedmetadata = function(){
+     pro.value = song.currentTime;
+    pro.max = song.duration;
+   }
+    if(song.play){
+      setInterval(()=>{
+        pro.value = song.currentTime;
+      },10);
+    }
+    function fun(){
+      song.play();
+      document.getElementById("me").style.display = "block";
+      document.getElementById("just").style.display = "none";
+    }
+    function fu(){
+      song.pause()
+      document.getElementById("me").style.display = "none";
+      document.getElementById("just").style.display = "block";
+      
+    }
+    function ex(){
+      document.getElementById("nav").style.display = "block";
+      song.pause();
+      pro.value = 0;
+      song.currentTime = 0;
+      document.getElementById("div1").style.display = "none";
+      document.getElementById("sec").style.display = "block";
+    }
+    pro.onchange = function(){
+      if(song.pause()){
+        song.pause();
+      song.currentTime = pro.value;
+      document.getElementById("me").style.display ="none";
+      document.getElementById("just").style.display ="block";
+    
+    } else{
+      song.play();
+      song.currentTime = pro.value;
+      document.getElementById("me").style.display ="block";
+      document.getElementById("just").style.display ="none";
+    }
+    {
+      document.getElementById("me").style.display ="none";
+    }
+    var menu = document.getElementById("menu");
+    function show(){
+      menu.style.display = "block";
+      document.getElementById("sec").style.display = "none";
+    }
+    function hide(){
+      document.getElementById("sec").style.display = "block";
+      menu.style.display = "none";
+      document.getElementById("div1").style.disply = "none";
+    }
+    function ff(){
+      document.getElementById("div1").style.display = "block";
+      menu.style.display = "none";
+      document.getElementById("nav").style.display = "none";
+      document.getElementById("me").style.display ="none";
+      document.getElementById("just").style.display ="block";
+      
+    }
+    
+    </script>
+  <!--header-->
+  <section id="sec">
+  
+  <div id="image">
+    <div id="img1">
+    
+    <img style="width:100%;border-radius:0;" src="/storage/emulated/0/Updf/Image/img5.jpg"><br><br><hr>
+      <strong><button id="btn" onclick="logg()"><a href="sign in">Login</a></button></button>
+      <button id="btn" onclick="caa("><a href="profile.html">Join us</a></button><hr>
+      </strong> <span style="padding:8px;"class="span">Join us</span>
+      <!--login div-->
+      <div id="login">
+        <br><br><br><br>
+        <div class="pic"><br>
+          <div class="head"></div>
+          <div class="chest"></div>
+        </div>
+        <hr>
+        <h2>Login&nbsp;<span>into your account</span></h2>
+        <input type="name" placeholder="Your UserName..."><br>
+        <input type="password" placeholder="Password*****">
+        <button>Login</button>
+        <p style="margin:5px;outline:2px solid black;">Create a new account</p><span><a href="">Forgot password</a></span><br>
+        <button onclick="closee()"style="float:left;margin:20px;
+          background:red;">Cancel</button>
+      </div>
+      <div id="ca"><br><br><br><br><button style="width:30%;float:right;background:red;color:white;padding:7px;"onclick="nonee()">close</button><br>
+        <br><br><br>
+        <div style="background:black; width:80%;height:40px;color:white;"></div>
+       <div style="background:yellow; width:80%;height:40px;"> </div>
+       <div style="background:red; width:80%;height:40px;"></div>
+      
+        <u><h2 style="color:black;">New Account</h2></u>
+        <form><hr>
+        <label>Name:</label> <input type="name" placeholder="UserName.." required>
+        <label>Nationalism:</label> <input type="text" placeholder="country..." required>
+        <h4>Are you a civil servant?</h4>
+        <label>No</label><input type="checkbox"><label>Yes</label><input type="checkbox">
+          <br> <label>Gender:</label><input type="radio">Male<input type="radio">Female
+          <br>
+          <label>Birth:</label>
+          <span class="date">
+          <input type="number" placeholder="dd"maxlength="2">
+           <input type="number" placeholder="mm" maxlength="2">
+           <input type="number" placeholder="yyyy"maxlength="4">
+          </span><br>
+          <br>
+          <button type="submit"> Submit</button>
+          <button type="reset">Reset</button>
+          <hr>
+          
+        </form> </div>
+      
+  </div>
+    <br><br><br><br>
+    <footer>
+      <br>
+      <a href="">About Us</a>
+      <a href="">Contacts</a>
+      <a href="">Emergence</a>
+      <br><hr>
+      <div id="div7">
+        Bundle Usage: You have used  of your daily bundle. Dial  to buy another Bundle Usage: You have used 
+         of your daily bundle. Dial 
+        to buy another Bundle Usage: You have used 
+        of your daily bundle. Dial  to buy another bundle.
+        Bundle Usage:
+      </div>
+      <a class="rr" href="">Terms and conditions</a>
+      <br><br><br>
+      <p>This website was designed by Proffesor.Ahumuza Ronney</p>
+      
+      <div id="copy">©Copyright 2023 All rights reserved</div>
+    </section>
+    </footer>
+    
+    
+    <script>
+    var ca = document.getElementById("ca");
+    var login = document.getElementById("login");
+    var ca = document.getElementById("ca");
+    var ca = document.getElementById("ca");
+    function logg(){
+      login.style.display = "block";
+    }
+    function closee(){
+      login.style.display = "none";
+    }
+    function caa(){
+      ca.style.display = "block";
+    }
+    function nonee(){
+      ca.style.display ="none";
+    }
+    </script>
+    
+</body>
+</html>

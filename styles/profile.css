@@ -1,0 +1,200 @@
+.divorce{
+     border-radius:50%;
+     height :250px;
+     width :300px;
+     border :0.5px solid black ;
+     margin : 0 auto;
+     background: ;
+     overflow : hidden ;
+     padding: px;
+}
+body{
+  display: noe;
+     background: ;
+}
+.divorce img{
+margin-top:-50px;
+     width: 100%;
+     min-height :270px;
+     
+     }
+#label{
+  width: 200px;
+margin :0px;
+  font-weight: bold;
+color :white;
+     padding :9px;
+     background: green;
+     border-radius: 5%;
+  font-size: 18px;
+}
+#input-file{
+     display : none ;
+}
+#fl{
+  font-size:15px;
+}
+#one input, select {
+     padding :12px;
+   border-radius: 1px;
+     width: 60%;
+  caret-width:30px;
+  caret-color: green;
+     color: black;
+  
+     margin-top :35px;
+  border: 1px solid black;
+  border-top: ;
+  border-left: ;
+  background: ;
+  border-right:;
+}
+button {
+  animation: zooming 6s linear infinite;
+  font-size: 25px;
+  font-weight: bold;
+     width:50%;
+     padding :12px;
+     background: white;
+     color: black;
+  border:2px solid green;
+}
+#one label {
+  margin: 0;
+ color: black;
+ background: none;
+ font-size :13px;
+}
+select{
+     color:black;
+}
+@keyframes zooming{
+  0%{
+    transform: scale(0.8);
+  }
+  50%{
+    transform: scale(1.0);
+    }
+  100%{
+    transform: scale(0.8);
+  }
+}
+hr{
+  background: green;
+}
+#account{
+  display: none;
+  position:absolute;
+  width:100%;
+  height: 100vh;
+  z-index: 1;
+  margin-top: 50px;
+  background:white ;
+  overflow: scroll;align-content: 
+}
+#account .img{
+  height: 80px;
+  width:80px;
+  float: left;
+  overflow: hidden;
+  border-radius:50%;
+}
+#img2{
+  overflow: hidden;
+  border: ;
+  height: 40px;
+  width:40px;
+  border-radius:50%;
+}
+.img img{
+  width:100%;
+  
+}
+.img{
+  float: left;
+  
+}
+#account #box{
+  justify-content: center;
+  display: flex;
+  background: white;
+  border: 1px solid black;
+  border-radius:5px;
+  height: 50px;
+  align-content: center;
+  align-items: center;
+  width:69px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+textarea{
+  border: 2px solid black;
+}
+#av{
+  background: black;
+  width:100%;
+  margin-top: 0;
+}
+#post{
+  background: lightblue;
+  width:70%;
+  border: 1px solid black;
+  padding: 5px;
+}
+#posted{
+  width:78%;
+  border-radius:10px;
+  overflow: hidden; 
+  height: 180px;
+  background: transparent;
+}
+#rest{
+  display: nne;
+}
+#posted img{
+  width:100%;
+}
+#keep{
+  display: none;
+}
+#keep p{
+  margin-top: 1px;
+  margin-left: 15%;
+  text-align: left;
+}
+#keep-more{
+  display: none;
+}
+keep-more-show{
+  position:absolute;
+  top:78px;
+  z-index: 3;
+  left:60%;
+}
+#input-file2{
+  display: none;
+}
+#words{
+  overflow: hidden;
+  width:80%;
+  background: white;
+  height:83px;
+}
+h4{
+  margin-left: -2px;
+  margin-bottom: 0;
+}
+ #img2 .on{
+  background: lightgreen;
+    width:14px;
+    height: 14px;
+    border-radius:50%;
+    position:absolute;
+  margin-top: 4px;
+   z-index: 4;
+   margin-left: 28px;
+}
+#one{
+  display: nne;
+}

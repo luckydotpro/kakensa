@@ -1,0 +1,28 @@
+tr:nth-child(odd){
+  background: rgba(100,3,0,0.8);
+}
+tr:nth-child(even){
+  background: rgba(2,0,0,0.5);
+}
+table{
+  border: 2px solid black;
+  background-size: 50%;
+  background: black url("/storage/emulated/0/Updf/Image/23.jpg");
+  width:100%;
+  color:white;
+  background-repeat: none;
+}
+thead th{
+  background-color: black;
+}
+td{
+  color:white;
+  outline: 2px solid black;
+}
+#video{
+  position: absolute;
+  width:100%;
+  top:23px;
+  left:0;
+  z-index: -1;
+}

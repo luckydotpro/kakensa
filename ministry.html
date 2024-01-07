@@ -1,0 +1,270 @@
+
+  <!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/2b83026e2c.js" crossorigin="anonymous"></script>
+  
+  <meta name="viewport" content="width=devive-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/ministry.css">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Ministry</title>
+</head>
+<body bgcolor="lightblue">
+  <p id="p"></p>
+     <!--Nav bar -->
+  <center>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a class="active"href="">Contact us</a>
+      <a href="sign in.html">Login</a>
+      <!-- menu bar-->
+      <div onclick="show()"id="bar">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        </div>
+      </nav>
+    
+    <!--menu list-->
+    <div id="menu">
+      <button id="button" onclick="hide()">Close</button>
+      <a href="">  <i class="fa-solid fa-jet-fighter"></i>&nbsp;&nbsp;
+       Weapons</a> 
+      <a href="sign in.html"> <i class="fa-solid fa-right-to-bracket"></i>&nbsp;&nbsp;
+Join Us</a>
+      <a href="gallary.html"> <i class="fa-regular fa-images"></i>&nbsp;&nbsp;
+Gallary</a>
+      <button onclick="ff()"> 
+      <i class="fa-solid fa-music"></i>&nbsp;&nbsp;
+     Nation Anthem</button>
+      <a href="officials.html"><i class="fa-solid fa-person-military-rifle"></i>&nbsp;&nbsp;
+ Officials</a>
+      <a href="regions.html"> 
+  <i class="fa-solid fa-house-laptop"></i>&nbsp;&nbsp;
+  FAQ</a>
+    </div>
+    <br><br><br>
+    <!--anthem-->
+    <audio id="song">
+      <source src="Image/anthem.mp3">
+    </audio>  
+    <div id="div1">
+      
+      <button style="float:right;background:green;color:white;border-radius:23px;"onclick="ex()">Exit</button><br><br>
+      
+      
+      <br>
+      <div id="me"></div>
+      <div id="just"></div><br>
+      <h3><b style="font-size:30px;color:green;">Uganda</b> National Anthem</h3>
+      
+      <div class="div">
+      <input value="0"type="range" id="prog"><br>
+      <br>
+        <button onclick="fun()">Play Song</button>
+      <button onclick="fu()">Pause song</button>
+      </div>
+    </div>
+    <script src="scripts/join us .js">
+    <script>
+    var song = document.getElementById("song");
+    var pro = document.getElementById("prog");
+    var sp = document.getElementById("me");
+      
+   song.onloadedmetadata = function(){
+     pro.value = song.currentTime;
+    pro.max = song.duration;
+   }
+    if(song.play){
+      setInterval(()=>{
+        pro.value = song.currentTime;
+      },10);
+    }
+    function fun(){
+      song.play();
+      document.getElementById("me").style.display = "block";
+      document.getElementById("just").style.display = "none";
+    }
+    function fu(){
+      song.pause()
+      document.getElementById("me").style.display = "none";
+      document.getElementById("just").style.display = "block";
+      
+    }
+    function ex(){
+      document.getElementById("nav").style.display = "block";
+      song.pause();
+      pro.value = 0;
+      song.currentTime = 0;
+      document.getElementById("div1").style.display = "none";
+      document.getElementById("sec").style.display = "block";
+    }
+    pro.onchange = function(){
+      song.play();
+      song.currentTime = pro.value;
+      document.getElementById("me").style.display ="block";
+      document.getElementById("just").style.display ="none";
+    
+    }
+    {
+      document.getElementById("me").style.display ="none";
+    }
+    var menu = document.getElementById("menu");
+    function show(){
+      menu.style.display = "block";
+      document.getElementById("sec").style.display = "none";
+    }
+    function hide(){
+      document.getElementById("sec").style.display = "block";
+      menu.style.display = "none";
+      document.getElementById("div1").style.disply = "none";
+    }
+    function ff(){
+      document.getElementById("div1").style.display = "block";
+      menu.style.display = "none";
+      document.getElementById("nav").style.display = "none";
+      document.getElementById("me").style.display ="none";
+      document.getElementById("just").style.display ="block";
+      
+    }
+    
+    </script>
+  <section id="sec">
+  <!--header--><br><br><br>
+    <h2>CONTACT US</h2>
+    <h2>We Are The People defence force</h2>
+        <h3 id="heading">
+OUR ONLINE CONTACTS</h3>
+
+
+<p id="fb" style="">
+<a href="">facebook</a>
+</p>
+
+
+
+<p id="fb" style="background: blue;color: white;">
+<a href="">Twitter</a>
+</p>
+
+<p id="fb" style="background: red;color: white;">
+<a href="">
+
+U-tube
+
+ </a></p>
+
+<p id="fb" style="color:#fff;">
+<a href="">Whats App</a>
+</p>
+
+
+
+<p id="fb" style="background: hotpink;color: #fff;">
+<a href="">Instagram
+</a></p>
+
+<p id="fb" style="background:#000; ">
+<a href="">Telegram</a>
+</p>
+
+
+
+<p id="fb" style="color: #000;">
+<a href="">Call Us Now</a>
+</p>
+
+
+
+<div class="prof">
+
+<h4 id="heading">
+  Our Location
+</h4>
+<center>
+<p id="explaining">
+  Visit Our Offices Located
+at Lugadi Road F/portal
+In Kampala we are Located At 
+  Entebe Road Near the Bank of Uganda Offices
+
+</p>
+</center>
+
+</div>
+    <hr>
+    
+  
+    <hr>
+      
+      
+         <br>
+    
+       <footer>
+      <br>
+      <a href="">About Us</a>
+      <a href="">Contacts</a>
+      <a href="">Emergence</a>
+      <br><hr>
+      <div id="div7">
+      <br><br><br>
+      <p>This website was designed by Proffesor.Ahumuza Ronney</p>
+      
+      
+        <b>BUSINESS PLAN</b><br><b>OUR BUDGET</b>
+        <br><b>OUR OFFICES</b><br><b>OUR MISSION</b><hr>
+        <b>QUESTIONS</b><br><b>NATICK LEADERSHIP</b><br>BUSINESS PLAN</b><br><b>OUR BUDGET</b>
+        <br><b>OUR OFFICES</b><br><b>OUR MISSION</b><hr>
+        <b>BUSINESS PLAN</b><br><b>OUR BUDGET</b>
+        <br><b>OUR OFFICES</b><br><b>OUR MISSION</b><hr>
+      </div>      <br><br><br><br><br><br>
+      <a href="tel:+256789396484" id="callus">CALL US NOW</a>
+      <a class="rr" href="">Terms and conditions</a>
+      <br><br><br><br><br><br>
+      <div id="copy">©Copyright 2023 All rights reserved<br>This Website was designed by<br> prof.Ahumuza Ronney Achaali</div>
+    </section>
+    </footer>
+
+
+
+
+
+     
+<script >
+           been();
+        function been(){
+             
+        
+        var date = new Date();
+        let hour = date.getHours();
+        var minutes = date.getMinutes();
+        var second = date.getSeconds();
+        var x = "AM";
+        document.getElementById("p"). innerHTML = hour +":"+ minutes + ":" + second + " "+ x;
+  setTimeout(been, 1000);
+  
+  if(hour == 0){
+       hour = 12;
+       }
+       if(hour > 11){
+           hour = hour - 12; 
+           x = "PM";
+       };
+       if(hour < 10){
+            hour = "0" + hour
+            
+       };
+       if(minutes < 10){
+            minutes = "0" + minutes;
+       };
+       if(second < 10){
+            second = "0" + second;
+       };
+  };
+   </script>
+</body>
+</html>
+
+</body>
+</html>

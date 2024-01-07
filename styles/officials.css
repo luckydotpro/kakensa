@@ -1,0 +1,17 @@
+.off{
+  background: whitesmoke;
+  padding: 0;
+  width:90%;
+  margin-bottom: 0;
+  margin-top: 0px;
+  box-shadow: 0 0 7px 2px;
+}
+.off img{
+  width:100 %;
+}
+.secc{
+  column-count: 2;
+  column-rule-style: dotted;;
+  column-rule-width: 5px;
+  column-rule-color: red;
+}

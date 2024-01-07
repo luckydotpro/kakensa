@@ -1,0 +1,41 @@
+body{
+  background: lightblue;
+}
+.para{
+  margin-bottom: 0;
+  color: green;
+  font-size: 30px;
+}
+.pa{
+  background: white;
+  box-shadow:0 0 0px 0px;
+  width:100%;
+  padding: 5px;
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+.pa span{
+  display: none;
+}
+#bt{
+  width:50%;
+  padding: 7px;
+  background: red;
+}
+#bt2{
+  width:50%;
+  padding: 7px;
+  background: red;
+}
+p bold{
+  font-weight: 3000;
+  font-size: 30px;
+}
+#newscont:hover{
+  background: rgba(0,0,0,0.1);
+}
+#newscont{
+  background: #;
+  margin-bottom: 5px;
+  padding-bottom: 30px
+}
